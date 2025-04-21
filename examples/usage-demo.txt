@@ -1,0 +1,10 @@
+$ ./bin/shell
+mini-shell> ls | grep cpp
+parser.cpp
+executor.cpp
+mini-shell> cd src
+mini-shell> pwd
+/home/user/mini-shell/src
+mini-shell> help
+Built-in commands: cd, exit, help
+mini-shell> exit
