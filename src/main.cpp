@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-#include "parser.hpp"
-#include "executor.hpp"
-#include "builtins.hpp"
+#include "headers/parser.hpp"
+#include "headers/executor.hpp"
+#include "headers/builtins.hpp"
 
 int main() {
     std::string line;

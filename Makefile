@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra
+CXXFLAGS = -std=c++17 -Wall -Wextra -I src/headers
 SRCDIR = src
 OBJDIR = build
 BINDIR = bin
@@ -11,6 +11,7 @@ TARGET = shell
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
+	@mkdir -p $(BINDIR)
 	$(CXX) $(CXXFLAGS) -o $(BINDIR)/$(TARGET) $(OBJS)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
